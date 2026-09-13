@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("");
+ 
 
   return (
     <div style={{ textAlign: "center", padding: "2rem" }}>
@@ -23,7 +24,9 @@ function App() {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+        
         {name && <p>Hello, {name}! 👋</p>}
+        
       </div>
 
       <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "gray" }}>
