@@ -18,19 +18,22 @@ function App() {
       </div>
 
       <div>
-        <input
-          type="text"
-          placeholder="Type your name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input 
-          type="text"
-          placeholder="Type your age"
-          value={age}
-          onChange={(e) => setAge(e.target.value)}
-        
-        />
+        <div
+          style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}
+        >
+          <input
+            type="text"
+            placeholder="Type your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Type your age"
+            value={age}
+            onChange={(e) => setAge(e.target.value)}
+          />
+        </div>
         {name && <p>Hello, {name}! 👋</p>}
         {age && <p>You are {age} years old.</p>}
       </div>
